@@ -1,0 +1,342 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+/*index*/
+/* HEADER: */
+#headlap{
+    width:100%;
+    height: 75px; 
+    background-color: #62ad29;
+
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+#headlap > nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+#headlap > nav > a{
+  text-decoration:none; 
+  background-color: #b00c0c;
+  color: #000;
+  padding:10px;
+  padding-left: 40px;
+  padding-right: 40px; 
+  font-family: Trebuchet MS, sans-serif;
+  text-transform: uppercase;
+  font-size:13pt;
+  font-weight: bold;
+}
+
+#headlap > nav > a:hover {
+    background-color: #d4be30;
+}
+
+/*Dropdown Buttons*/
+.dropbtn {
+    background-color: #b00c0c;
+    color: #000;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 13pt;
+    border: none;
+    font-family: Trebuchet MS, sans-serif;
+    font-size:13pt;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Trebuchet MS, sans-serif;
+    text-transform: uppercase;
+    font-size:13pt;
+    font-weight: bold;
+  }
+  
+  .dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Trebuchet MS, sans-serif;
+    text-transform: uppercase;
+    font-size:13pt;
+    font-weight: bold;
+  }
+  
+  .dropdown-content a:hover {background-color: #d4be30;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #d4be30;}
+
+#headmob {
+  width: 100%;
+  height: 50px;
+
+  background-color: #62ad29;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#headmob > div > a > img {
+  height: 35px;
+  width: 55px;
+  padding-top: 8px;
+}
+
+/*Burgermenu page*/
+#menumob > a {
+  background-color: #b00c0c;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: xx-large;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 37px;
+  height: 75px;
+}
+
+
+/*Main*/
+main > div > h1 {
+  color: #b00c0c;
+  font-family: 'Kanit', sans-serif;
+  padding-top: 15px;
+}
+
+main > div > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  padding-top: 15px;
+}
+
+#brygpride > img {
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
+main > div > ul > li {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#centerhead {
+  display: flex;
+  justify-content: center;
+}
+
+main > .logos {
+  height: 200px;
+  width: 300px;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+
+main > #faktalogo > img {
+  height: 100px;
+  width: 200px;
+}
+
+main > div > ul > li {
+  list-style: none;
+  padding-top: 10px;
+  
+}
+
+main > .links > section {
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+#footbox {
+  padding-top: 300px;
+}
+
+
+#footlap {
+  background-color: #62ad29;
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  display: flex;
+  justify-content: space-around;
+  
+}  
+
+
+#footlap > div > p {
+  padding-top: 75px;
+}
+
+#footlap > div > img {
+  height: 200px;
+}
+
+
+
+
+
+/*Media Queries*/
+@media only screen and (max-width: 768px) {
+
+/*Header for mobile*/  
+  #headlap {
+    display: none;
+  }
+
+
+/*Main for mobile*/
+
+#inimg1, #inimg2 , #inimg3 {
+  display: flex;
+  justify-content: center;
+}
+
+  #brygpride > img {
+    width: 350px;
+    
+    padding-left: 12px;
+  }
+
+  #histmobimg > img {
+    height: 300px;
+    width: 300px;
+    padding-top: 25px;
+    padding-left: 40px;
+  }
+
+  main > div > ul > li {
+    display: flex;
+    align-items: center;
+  }
+
+  main > div > ul > li {
+    display: flex;
+    justify-content: center;  
+  }
+
+  main > #faktalogo > img {
+    padding-left: 50px;
+  }
+
+  main > div > h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+
+/*Footer for mobile*/  
+
+  #footlap {
+    font-size: small;
+  }
+
+  #footlap > div > p {
+    padding-top: 50px;
+  }
+
+  #footlap > div > img {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+/*Header for laptpop*/
+  #headmob {
+    display: none;
+  }
+
+
+/*Main for laptop*/
+
+  #inimg1, #inimg2 , #inimg3 {
+    display:inline-flex;
+
+    padding: 100px;
+  }
+
+  #inimg2 {
+    height: 400px;
+  }
+
+
+  #histmobimg > img {
+    padding-top: 25px;
+    padding-left: 530px;
+  }
+
+  main > div > .listpageh {
+    display: flex;
+    justify-content: center;
+  }
+
+  main > .listpage {
+    display: flex;
+    justify-content: center;
+  }
+
+  main > div > h1 {
+    padding-left: 75px;
+
+  }
+
+  main > div > p {
+    padding-left: 75px;
+  }
+
+  main > .logos {
+    padding-left: 525px;
+    
+  }
+  
+  main > #faktalogo > img {
+    padding-left: 575px;
+  }
+
+  main > .links > section {
+    padding-left: 75px;
+  }
+
+  main > div > ul > li {
+    padding-left: 75px;  
+  }
+
+}
